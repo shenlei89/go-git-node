@@ -7,8 +7,7 @@ source /etc/profile
 wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 rpm -ivh epel-release-latest-7.noarch.rpm
 yum install -y git
-cd ~
-mkdir /root/sillyGirl
+cd /root
 s=sillyGirl;a=arm64;if [[ $(uname -a | grep "x86_64") != "" ]];then a=amd64;fi ;if [ ! -d $s ];then mkdir $s;fi ;cd $s;wget http://github.yanyuge.workers.dev/https://github.com/cdle/${s}/releases/download/main/${s}_linux_$a -O $s && chmod 777 $s;pkill -9 $s;$(pwd)/
 cd /etc/sillyGirl && wget https://github.com/shenlei89/go-git-node/blob/main/sets.conf
 cd /usr/local  && wget https://nodejs.org/dist/v14.17.5/node-v14.17.5-linux-x64.tar.xz
