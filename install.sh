@@ -3,6 +3,7 @@ cd /usr/local && wget https://golang.google.cn/dl/go1.16.7.linux-amd64.tar.gz -O
 tar -xvzf go1.16.7.linux-amd64.tar.gz
 wget https://github.com/shenlei89/go-git-node/blob/main/export.txt
 cat export.txt >> /etc/profile 
+rm -rf export.txt
 source /etc/profile
 wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 rpm -ivh epel-release-latest-7.noarch.rpm
@@ -14,6 +15,7 @@ cd /usr/local  && wget https://nodejs.org/dist/v14.17.5/node-v14.17.5-linux-x64.
 xz -dk node-v14.17.5-linux-x64.tar.xz  && tar -xvf node-v14.17.5-linux-x64.tar
 cd /root && wget https://github.com/shenlei89/go-git-node/blob/main/e.txt
 cat e.txt >> /etc/profile
+rm -rf e.txt
 source /etc/profile
 npm install pm2 -g
 cd /root
