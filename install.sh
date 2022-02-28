@@ -20,6 +20,7 @@ npm install pm2 -g
 cd /root
 git clone https://github.com/takayama-lily/node-onebot.git
 cd node-onebot
-
+rm -rf config.js
+wget https://github.com/shenlei89/go-git-node/blob/main/config.js
 
 
